@@ -3,10 +3,10 @@ import Header from '../Others/Header'
 import TaskForm from '../Others/TaskForm'
 import AllTasks from '../Others/AllTasks'
 
-const AdminDashboard = () => {
+const AdminDashboard = ({changeUser}) => {
   return (
     <div className='p-10'>
-        <Header/>
+        <Header changeUser={changeUser}/>
         <TaskForm/>
         <AllTasks/>
     </div>
